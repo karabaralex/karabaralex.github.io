@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Google App Deep Links, ver 2</title>
+	<title>Google App Deep Links</title>
 	<style>
 		ul li a {
 			font-size: 24px;
@@ -9,13 +9,14 @@
 	</style>
 </head>
 <body>
-	<h1>Google App Deep Links</h1>
+	<h1>Google App Deep Links, ver 3</h1>
 	<ul>
-		<li><a href="intent://geo:37.7749,-122.4194?z=10&q=restaurants#Intent;package=com.google.android.apps.maps;end">Open Google Maps</a></li>
+		<li><a href="intent://google.streetview:cbll=46.414382,10.013988#Intent;package=com.google.android.apps.maps;end">Open Google Maps</a></li>
 		<li><a href="intent://drive/my-drive#Intent;scheme=https;package=com.google.android.apps.docs;end">Open Google Drive</a></li>
 		<li><a href="intent://www.google.com/calendar/event#Intent;scheme=https;package=com.google.android.calendar;end">Open Google Calendar</a></li>
 		<li><a href="intent://photos#Intent;scheme=https;package=com.google.android.apps.photos;end">Open Google Photos</a></li>
 		<li><a href="intent://compose/?to=recipient@example.com&subject=Example%20Subject&body=This%20is%20the%20body%20of%20the%20email.#Intent;scheme=mailto;package=com.google.android.gm;end">Open Gmail App</a></li>
+		<li><a href="intent://calendar/create?title=Meeting%20with%20John&description=Discuss%20project%20status&eventLocation=Office&beginTime=2023-03-16T13:00:00-07:00&endTime=2023-03-16T14:00:00-07:00#Intent;scheme=https;package=com.google.android.calendar;end">Create a Meeting with John</a></li>
 	</ul>
 </body>
 </html>
