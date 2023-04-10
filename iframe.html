@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iframe example</title>
+    <style>
+      /* Define a green border around the iframe */
+      iframe {
+        border: 5px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>iframe example</h1>
+    <iframe id="my-iframe" src="https://www.yahoo.com"></iframe>
+
+    <script>
+      var iframe = document.getElementById('my-iframe');
+      var urls = [
+        'https://www.yahoo.com',
+        'https://www.google.com'
+      ];
+      var currentUrlIndex = 0;
+
+      setInterval(function() {
+        currentUrlIndex++;
+        if (currentUrlIndex >= urls.length) {
+          currentUrlIndex = 0;
+        }
+        iframe.src = urls[currentUrlIndex];
+      }, 5000);
+    </script>
+  </body>
+</html>
