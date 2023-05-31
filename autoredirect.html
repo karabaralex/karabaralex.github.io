@@ -7,7 +7,7 @@
     function redirectToGmail() {
       // Redirect after 3 seconds
       setTimeout(function() {
-        window.location.href = 'intent://#Intent;scheme=mailto;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAIL;end;';
+        window.location.href = 'intent://compose/?to=recipient@example.com&subject=Example%20Subject&body=This%20is%20the%20body%20of%20the%20email.#Intent;scheme=mailto;package=com.google.android.gm;end';
       }, 3000);
     }
 
