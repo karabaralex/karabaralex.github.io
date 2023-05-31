@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect to Gmail</title>
+  <script>
+    // Function to redirect the user to Gmail
+    function redirectToGmail() {
+      // Redirect after 3 seconds
+      setTimeout(function() {
+        window.location.href = 'intent://#Intent;scheme=mailto;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAIL;end;';
+      }, 3000);
+    }
+
+    // Function to update the countdown
+    function updateCountdown() {
+      var countdownElement = document.getElementById("countdown");
+      var countdownValue = parseInt(countdownElement.innerHTML);
+
+      // Update the countdown value and check if it reaches 0
+      countdownValue--;
+      countdownElement.innerHTML = countdownValue;
+
+      if (countdownValue === 0) {
+        redirectToGmail();
+      } else {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+
+    // Start the countdown when the page loads
+    window.onload = function() {
+      updateCountdown();
+    };
+  </script>
+</head>
+<body>
+  <h1>Redirecting to Gmail in <span id="countdown">3</span> seconds...</h1>
+</body>
+</html>
