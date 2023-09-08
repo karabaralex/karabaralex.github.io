@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pixel test</title>
+    <meta http-equiv="refresh" content="5;url=html_redirect2.html">
+</head>
+<body>
+    <a>Redirect in 5 seconds</a>
+</body>
+</html>
