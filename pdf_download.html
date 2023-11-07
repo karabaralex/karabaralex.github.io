@@ -1,1 +1,20 @@
-140397
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Download</title>
+</head>
+<body>
+    <p>This is a simple HTML website.</p>
+    
+    <script>
+        // Use JavaScript to trigger the download on page load
+        window.onload = function() {
+            var link = document.createElement("a");
+            link.href = "https://www.africau.edu/images/default/sample.pdf"; // Replace with the actual URL or path to your PDF file
+            link.download = "https://www.africau.edu/images/default/sample.pdf";
+            link.click();
+        };
+    </script>
+</body>
+</html>
